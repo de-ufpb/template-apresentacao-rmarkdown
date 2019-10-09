@@ -368,7 +368,7 @@ background-position: 100% 0%
 Exemplo de um gráfico produzido usando a biblioteca [**ggplot2**](http://www.ggplot2-exts.org/gallery/). Utilize a barra lateral para visualizar todo o código.
 
 .scroll-box-20[
-.code60[
+.code50[
 
   ```{r, eval = F}
 library(ggplot2)
@@ -460,6 +460,58 @@ background-position: 100% 0%
 ```{r, echo=FALSE,out.width="300cm", out.height="200px",fig.cap="",fig.show='hold',fig.align='center'}
 knitr::include_graphics("img/espanto.gif")
 ```
+
+---
+background-image: url("img/logo-branca.png")
+background-size: 100px
+background-position: 100% 0%
+
+# Tabelas
+
+
+```{r, fig.align = 'center'}
+knitr::kable(mtcars[1L:6L, ], format = "html", caption = "Título da minha tabela.")
+```
+
+---
+background-image: url("img/logo-branca.png")
+background-size: 100px
+background-position: 100% 0%
+
+# Colocando caixas de anotações
+
+
+.pull-left[
+**Anotação do lado esquerdo:**
+.font80[.content-box-black[
+"O **CCEN**, um dos mais importantes Centros da UFPB, universidade pública, gratuita e estatal, sendo referência no ensino, pesquisa e extensão, funcionando com uma boa infra-estrutura e um modelo gerencial democrático e eficiente, adequados às múltiplas transformações e demandas da sociedade, tendo uma relevante atuação voltada ao desenvolvimento científico, tecnológico, cultural e socioeconômico da Paraíba, do Nordeste e do Brasil, visando à melhoria de qualidade da vida".
+]]
+]
+
+.pull-right[
+
+**Anotação do lado direito:**
+
+.font80[.content-box-black[
+O Curso de Bacharelado em Estatística foi criado no ano **2000**, a partir da **Resolução no 25/2000** do CONSEPE (Conselho Superior de Ensino, Pesquisa e Extensão). Desde a primeira turma de formandos em 2004.1, todos os bacharéis em Estatística da UFPB obtiveram postos de trabalho e/ou ingressaram em programas de pós-graduação de comprovado nível de excelência.
+]]
+]
+
+</br>
+</br>
+</br>
+
+--
+
+.fonte150[Escrevendo mais alguma coisa **...**]
+
+--
+
+.pull-right[
+**Outra anotação do lado direito:**
+.font80[.content-box-black[
+Mais alguma anotação **...**
+]]]
 
 
 ---

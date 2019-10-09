@@ -245,3 +245,27 @@ table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover {
 .font180, .code180 .remark-code, .code180 .remark-inline-code{ font-size: 180%; }
 .font190, .code190 .remark-code, .code190 .remark-inline-code{ font-size: 190%; }
 .font200, .code200 .remark-code, .code200 .remark-inline-code{ font-size: 200%; }
+
+.content-box { 
+    box-sizing: border-box;
+    background-color: #e2e2e2;
+}
+.content-box-blue,
+.content-box-gray,
+.content-box-grey,
+.content-box-army,
+.content-box-green,
+.content-box-purple,
+.content-box-red,
+.content-box-yellow {
+  box-sizing: border-box;
+  border-radius: 15px;
+  margin: 0 0 15px;
+  overflow: hidden;
+  padding: 0px 20px 0px 20px;
+  width: 100%;
+}
+
+.content-box-black { background-color: #000000; }
+
+
