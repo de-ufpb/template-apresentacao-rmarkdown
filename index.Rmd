@@ -498,8 +498,7 @@ O Curso de Bacharelado em Estatística foi criado no ano **2000**, a partir da *
 ]
 
 </br>
-</br>
-</br>
+
 
 --
 
@@ -511,6 +510,8 @@ O Curso de Bacharelado em Estatística foi criado no ano **2000**, a partir da *
 **Outra anotação do lado direito:**
 .font80[.content-box-black[
 Mais alguma anotação **...**
+
+$$\int_{-\infty}^{+\infty} f_{X} dx = 1.$$
 ]]]
 
 
