@@ -1,3 +1,6 @@
+**Desenvolvido por**: Pedro Rafael D. Marinho </br>
+**E-mail**: pedro.rafael.marinho@gmail.com
+
 # Apresentação construída em **xaringan**
 
 O pacote pacote [**xaringan**](https://github.com/yihui/xaringan) está disponível no [**CRAN**](https://cran.r-project.org/web/packages/available_packages_by_date.html) da linguagem [**R**](https://www.r-project.org/) e é útil para a criação de apresentações com o [**remark.js**](https://remarkjs.com/#1) utilizando o [**RMarkdown**](https://rmarkdown.rstudio.com/). 
