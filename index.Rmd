@@ -7,7 +7,7 @@ date: '</br>`r format(Sys.time(), "%d de %B de %Y")`'
 output:
   xaringan::moon_reader:
     lib_dir: libs
-    css: ["tema.css", "xaringan-themer.css"]
+    css: ["tema.css", "xaringan-themer.css", "animate.css"]
     nature:
       highlightStyle: github
       ratio: "16:9"
@@ -52,8 +52,6 @@ background-position: 100% 0%
 
 # Onde estamos no mundo?
 
---
-
 .pull-left[
 ```{r fig.height=6, eval=require('leaflet'), echo = FALSE}
 library(leaflet)
@@ -76,6 +74,8 @@ $$\int_0^x f(x) dx$$
 
 --
 
+.fadeInLeft.animated[
+
 .pull-right[
 O mapa ao lado foi produzido facilmente utilizando a biblioteca **leaflet**.
 ```{r fig.height=6, eval = FALSE}
@@ -89,7 +89,7 @@ leaflet() %>% addTiles() %>%
   )
 )
 ```
-]
+]]
 
 ---
 background-position: 100% 0%
@@ -126,6 +126,7 @@ install.packages("xaringan")
 
 --
 
+.zoomIn.animated[
 **Forma 2**:
 
 Instalando do [**Github**](https://github.com/yihui/xaringan):
@@ -133,6 +134,7 @@ Instalando do [**Github**](https://github.com/yihui/xaringan):
 ```{r eval=FALSE, tidy=FALSE}
 devtools::install_github("yihui/xaringan")
 ```
+]
 
 ---
 background-image: url("img/logo-branca.png")
@@ -149,6 +151,7 @@ Para que você consiga rodar esse exemplo, é interessante que instale alguns pa
 
 --
 
+.fadeInDownBig.animated[
 ```{r eval=FALSE, tidy=FALSE}
 # Perceba que usando o devtools na Forma 2 apresentada no frame anterior
 install.packages(
@@ -161,6 +164,7 @@ install.packages(
   )
 )
 ```
+]
 
 ---
 background-image: url("img/logo-branca.png")
@@ -206,6 +210,7 @@ background-position: 100% 0%
 
 </br>
 
+
 .pull-left[
 ```{r, echo=FALSE,out.width="400px",  out.height="250px",fig.cap="Primeira gif.",fig.show='hold',fig.align='center'}
 knitr::include_graphics("img/gato_espanto.gif")
@@ -214,11 +219,12 @@ knitr::include_graphics("img/gato_espanto.gif")
 
 --
 
+.fadeInDownBig.animated[
 .pull-right[
 ```{r, echo=FALSE,out.width="400cm",  out.height="250px",fig.cap="Segunda gif.",fig.show='hold',fig.align='center'}
 knitr::include_graphics("img/102_anos.gif")
 ```
-]
+]]
 
 ---
 class: inverse, middle, center
@@ -238,10 +244,11 @@ background-size: cover
 
 --
 
+.rubberBand.animated[
 ```{r, echo=FALSE,out.width="400px", fig.align="left", out.height="150px",fig.show='hold'}
 knitr::include_graphics("img/logo-texto.png")
 ```
-
+]
 
 ---
 background-image: url("img/logo-branca.png")
@@ -258,11 +265,12 @@ knitr::include_graphics("img/batman.png")
 
 --
 
+.flip.animated[
 .pull-right[
 ```{r, echo=FALSE,out.width="250px",  out.height="500px",fig.cap="Esse é o Super-Hemílio.",fig.show='hold',fig.align='center'}
 knitr::include_graphics("img/super_hemilio.jpeg")
 ```
-]
+]]
 
 ---
 class: inverse, middle, center
@@ -305,6 +313,7 @@ embed_url("https://www.youtube.com/watch?v=WbsC_fGArVc")
 
 --
 
+.flipInX.animated[
 .pull-right[
 ```{r, echo = FALSE, fig.align='center'}
 library("htmltools")
@@ -313,7 +322,7 @@ embed_url("https://www.youtube.com/watch?v=JcyqIA2eJww")
 ```
 </br>
     **Rush - Tom Sawyer.**
-]
+]]
 
 ---
 background-image: url("img/logo-branca.png")
@@ -335,23 +344,20 @@ A vingança nunca é plena, mata a alma e a envenena **...**
 
 --
 
+.fadeInLeft.animated[
 .pull-right[
-
 ```{r, echo=FALSE,out.width="350cm", out.height="200px",fig.cap="Seu Madruga.",fig.show='hold',fig.align='center'}
 knitr::include_graphics("img/madruguinha.gif")
 ```
 
-]
+]]
 
---
-
+.fadeInRight.animated[
 .pull-left[
-
 ```{r, echo=FALSE,out.width="300cm", out.height="200px",fig.cap="",fig.show='hold',fig.align='left'}
 knitr::include_graphics("img/aplausos.gif")
 ```
-
-]
+]]
 
 ---
 class: inverse, middle, center
@@ -367,6 +373,7 @@ background-position: 100% 0%
 
 Exemplo de um gráfico produzido usando a biblioteca [**ggplot2**](http://www.ggplot2-exts.org/gallery/). Utilize a barra lateral para visualizar todo o código.
 
+.bounceInUp.animated[
 .scroll-box-20[
 .code50[
 
@@ -431,7 +438,7 @@ plot_grid(p1, p5, p6, p7, labels = c("A", "B", "C", "D"))
 
 ggsave(filename = "empirical.pdf", width = 10, height = 10)
 ```
-]]
+]]]
 
 ---
 background-image: url("img/logo-branca.png")
@@ -457,9 +464,11 @@ background-position: 100% 0%
 
 --
 
+.fadeIn.animated[
 ```{r, echo=FALSE,out.width="300cm", out.height="200px",fig.cap="",fig.show='hold',fig.align='center'}
 knitr::include_graphics("img/espanto.gif")
 ```
+]
 
 ---
 background-image: url("img/logo-branca.png")
@@ -502,9 +511,9 @@ O Curso de Bacharelado em Estatística foi criado no ano **2000**, a partir da *
 
 --
 
+.jello.animated[
 .fonte150[Escrevendo mais alguma coisa **...**]
-
---
+]
 
 .pull-right[
 **Outra anotação do lado direito:**
@@ -521,4 +530,6 @@ background-size: 100px
 background-position: 100% 0%
 class: middle, center
 
+.wobble.animated[
 # Obrigado pela sua atenção!
+]

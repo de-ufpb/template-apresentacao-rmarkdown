@@ -16,6 +16,7 @@
     <script src="libs/leaflet-binding-2.0.2/leaflet.js"></script>
     <link rel="stylesheet" href="tema.css" type="text/css" />
     <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+    <link rel="stylesheet" href="animate.css" type="text/css" />
   </head>
   <body>
     <textarea id="source">
@@ -56,11 +57,9 @@ background-position: 100% 0%
 
 # Onde estamos no mundo?
 
---
-
 .pull-left[
-<div id="htmlwidget-d7f3ad597f536367fe03" style="width:504px;height:432px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-d7f3ad597f536367fe03">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]}],"setView":[[-7.1404,-34.846199],17,{"maxWidth":150,"minWidth":150,"autoPan":true,"keepInView":false,"closeButton":true,"className":""}]},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-167dc4262a41b689eb88" style="width:504px;height:432px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-167dc4262a41b689eb88">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]}],"setView":[[-7.1404,-34.846199],17,{"maxWidth":150,"minWidth":150,"autoPan":true,"keepInView":false,"closeButton":true,"className":""}]},"evals":[],"jsHooks":[]}</script>
 ]
 
 ???
@@ -70,6 +69,8 @@ Uma anotação qualquer. É preciso apertar a tecla **P** para ter acesso ao *mo
 `$$\int_0^x f(x) dx$$`
 
 --
+
+.fadeInLeft.animated[
 
 .pull-right[
 O mapa ao lado foi produzido facilmente utilizando a biblioteca **leaflet**.
@@ -85,7 +86,7 @@ leaflet() %&gt;% addTiles() %&gt;%
   )
 )
 ```
-]
+]]
 
 ---
 background-position: 100% 0%
@@ -123,6 +124,7 @@ install.packages("xaringan")
 
 --
 
+.zoomIn.animated[
 **Forma 2**:
 
 Instalando do [**Github**](https://github.com/yihui/xaringan):
@@ -131,6 +133,7 @@ Instalando do [**Github**](https://github.com/yihui/xaringan):
 ```r
 devtools::install_github("yihui/xaringan")
 ```
+]
 
 ---
 background-image: url("img/logo-branca.png")
@@ -147,6 +150,7 @@ Para que você consiga rodar esse exemplo, é interessante que instale alguns pa
 
 --
 
+.fadeInDownBig.animated[
 
 ```r
 # Perceba que usando o devtools na Forma 2 apresentada no frame anterior
@@ -160,6 +164,7 @@ install.packages(
   )
 )
 ```
+]
 
 ---
 background-image: url("img/logo-branca.png")
@@ -205,6 +210,7 @@ background-position: 100% 0%
 
 &lt;/br&gt;
 
+
 .pull-left[
 &lt;div class="figure" style="text-align: center"&gt;
 &lt;img src="img/gato_espanto.gif" alt="Primeira gif." width="400px" height="250px" /&gt;
@@ -214,12 +220,13 @@ background-position: 100% 0%
 
 --
 
+.fadeInDownBig.animated[
 .pull-right[
 &lt;div class="figure" style="text-align: center"&gt;
 &lt;img src="img/102_anos.gif" alt="Segunda gif." width="400cm" height="250px" /&gt;
 &lt;p class="caption"&gt;Segunda gif.&lt;/p&gt;
 &lt;/div&gt;
-]
+]]
 
 ---
 class: inverse, middle, center
@@ -239,8 +246,9 @@ background-size: cover
 
 --
 
+.rubberBand.animated[
 &lt;img src="img/logo-texto.png" width="400px" height="150px" style="display: block; margin: auto auto auto 0;" /&gt;
-
+]
 
 ---
 background-image: url("img/logo-branca.png")
@@ -258,12 +266,13 @@ background-position: 100% 0%
 
 --
 
+.flip.animated[
 .pull-right[
 &lt;div class="figure" style="text-align: center"&gt;
 &lt;img src="img/super_hemilio.jpeg" alt="Esse é o Super-Hemílio." width="250px" height="500px" /&gt;
 &lt;p class="caption"&gt;Esse é o Super-Hemílio.&lt;/p&gt;
 &lt;/div&gt;
-]
+]]
 
 ---
 class: inverse, middle, center
@@ -303,11 +312,12 @@ embed_url("https://www.youtube.com/watch?v=WbsC_fGArVc")
 
 --
 
+.flipInX.animated[
 .pull-right[
 <iframe src="https://www.youtube.com/embed/JcyqIA2eJww" width="420" height="315" frameborder="0" allowfullscreen=""></iframe>
 &lt;/br&gt;
     **Rush - Tom Sawyer.**
-]
+]]
 
 ---
 background-image: url("img/logo-branca.png")
@@ -329,22 +339,19 @@ A vingança nunca é plena, mata a alma e a envenena **...**
 
 --
 
+.fadeInLeft.animated[
 .pull-right[
-
 &lt;div class="figure" style="text-align: center"&gt;
 &lt;img src="img/madruguinha.gif" alt="Seu Madruga." width="350cm" height="200px" /&gt;
 &lt;p class="caption"&gt;Seu Madruga.&lt;/p&gt;
 &lt;/div&gt;
 
-]
+]]
 
---
-
+.fadeInRight.animated[
 .pull-left[
-
 &lt;img src="img/aplausos.gif" width="300cm" height="200px" style="display: block; margin: auto auto auto 0;" /&gt;
-
-]
+]]
 
 ---
 class: inverse, middle, center
@@ -360,6 +367,7 @@ background-position: 100% 0%
 
 Exemplo de um gráfico produzido usando a biblioteca [**ggplot2**](http://www.ggplot2-exts.org/gallery/). Utilize a barra lateral para visualizar todo o código.
 
+.bounceInUp.animated[
 .scroll-box-20[
 .code50[
 
@@ -425,7 +433,7 @@ Exemplo de um gráfico produzido usando a biblioteca [**ggplot2**](http://www.gg
   
   ggsave(filename = "empirical.pdf", width = 10, height = 10)
   ```
-]]
+]]]
 
 ---
 background-image: url("img/logo-branca.png")
@@ -451,7 +459,9 @@ background-position: 100% 0%
 
 --
 
+.fadeIn.animated[
 &lt;img src="img/espanto.gif" width="300cm" height="200px" style="display: block; margin: auto;" /&gt;
+]
 
 ---
 background-image: url("img/logo-branca.png")
@@ -601,9 +611,9 @@ O Curso de Bacharelado em Estatística foi criado no ano **2000**, a partir da *
 
 --
 
+.jello.animated[
 .fonte150[Escrevendo mais alguma coisa **...**]
-
---
+]
 
 .pull-right[
 **Outra anotação do lado direito:**
@@ -620,7 +630,9 @@ background-size: 100px
 background-position: 100% 0%
 class: middle, center
 
+.wobble.animated[
 # Obrigado pela sua atenção!
+]
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
