@@ -219,7 +219,7 @@ knitr::include_graphics("img/gato_espanto.gif")
 
 --
 
-.fadeInDownBig.animated[
+.fadeInLeft.animated[
 .pull-right[
 ```{r, echo=FALSE,out.width="400cm",  out.height="250px",fig.cap="Segunda gif.",fig.show='hold',fig.align='center'}
 knitr::include_graphics("img/102_anos.gif")
@@ -265,7 +265,7 @@ knitr::include_graphics("img/batman.png")
 
 --
 
-.flip.animated[
+.zoomInUp.animated[
 .pull-right[
 ```{r, echo=FALSE,out.width="250px",  out.height="500px",fig.cap="Esse é o Super-Hemílio.",fig.show='hold',fig.align='center'}
 knitr::include_graphics("img/super_hemilio.jpeg")
@@ -331,6 +331,7 @@ background-position: 100% 0%
 
 # Uma citação
 
+
 --
 
 .pull-left[
@@ -346,15 +347,16 @@ A vingança nunca é plena, mata a alma e a envenena **...**
 
 .fadeInLeft.animated[
 .pull-right[
-```{r, echo=FALSE,out.width="350cm", out.height="200px",fig.cap="Seu Madruga.",fig.show='hold',fig.align='center'}
+```{r, echo=FALSE,out.width="350cm", out.height="230px",fig.cap="Seu Madruga.",fig.show='hold',fig.align='center'}
 knitr::include_graphics("img/madruguinha.gif")
 ```
-
 ]]
 
 .fadeInRight.animated[
 .pull-left[
-```{r, echo=FALSE,out.width="300cm", out.height="200px",fig.cap="",fig.show='hold',fig.align='left'}
+</br>
+</br>
+```{r, echo=FALSE,out.width="300cm", out.height="280px",fig.cap="",fig.show='hold',fig.align='left'}
 knitr::include_graphics("img/aplausos.gif")
 ```
 ]]
@@ -369,12 +371,12 @@ background-image: url("img/logo-branca.png")
 background-size: 100px
 background-position: 100% 0%
 
-# Fica tranquilo, código longos não geram problemas
+# Códigos longos não geram problemas
 
 Exemplo de um gráfico produzido usando a biblioteca [**ggplot2**](http://www.ggplot2-exts.org/gallery/). Utilize a barra lateral para visualizar todo o código.
 
-.bounceInUp.animated[
-.scroll-box-20[
+.zoomInUp.animated[
+.scroll-box-50[
 .code50[
 
   ```{r, eval = F}
@@ -530,6 +532,6 @@ background-size: 100px
 background-position: 100% 0%
 class: middle, center
 
-.wobble.animated[
+.jackInTheBox.animated[
 # Obrigado pela sua atenção!
 ]
