@@ -1,6 +1,6 @@
 **Desenvolvido por**: Pedro Rafael D. Marinho </br>
 **E-mail**: pedro.rafael.marinho@gmail.com </br>
-**GitHub**: prdm0/apresentacao-laranja.git
+**GitHub**: https://github.com/prdm0/apresentacao-laranja
 
 # Apresentação construída em **xaringan**
 
